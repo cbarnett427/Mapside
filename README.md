@@ -1,6 +1,7 @@
 <div align="center">
 <h1>Mapside Mapper</h1>
-<i>Mapside Mapper is a Python application built for the oil and gas industry for GIS (Geographic Information System) purposes. <br>It allows users to import coordinates from a CSV or Excel file, calculate distances between consecutive stations, and create KML/KMZ files to visualize lines connecting specific stations in Google Earth Pro.</i>
+<i>Mapside Mapper is a Python application built for the oil and gas industry for GIS (Geographic Information System) purposes. <br>
+It allows users to import coordinates from a CSV or Excel file, calculate distances between consecutive stations, and create KML/KMZ files to visualize lines connecting specific stations in Google Earth Pro.</i>
 <br>
 <br>
 
