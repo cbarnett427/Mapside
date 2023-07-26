@@ -15,13 +15,14 @@ Mapside Mapper is a Python application built for the oil and gas industry for GI
 - Required Python libraries (NumPy, Pandas, Tkinter, Simplekml, Geopy, Pyproj, geographiclib)
 
 ## How to Use
-1. Clone the repository to your local machine.
+1. Clone the repository to your local machine or download the zip files and extract the "Mapside Program" folder to your desktop.
 2. Ensure you have the required Python libraries installed by running the following command: <br>pip install numpy pandas tkinter simplekml geopy pyproj geographiclib
-3. Execute the program by running the "Mapside Mapper.py" file.
-4. The application's graphical user interface (GUI) will open. Use the "Import Coordinates" button to select a CSV or Excel file containing the station coordinates.
-5. After importing the coordinates, enter the "From Station" and "To Station" numbers in the provided input fields.
-6. Click the "Submit" button to generate a KML file with a line connecting the specified "From Station" and "To Station" coordinates.
-7. The KML file will be saved on your desktop, and Google Earth Pro will automatically open the file to visualize the line connecting the selected stations.
+3. Make sure to edit the file path variables to your desired file paths.
+4. Execute the program by running the "Mapside Mapper.py" file in the "Mapside Program" folder.
+5. The application's graphical user interface (GUI) will open. Use the "Import Coordinates" button to select a CSV or Excel file containing the station coordinates.
+6. After importing the coordinates, enter the "From Station" and "To Station" numbers in the provided input fields.
+7. Click the "Submit" button to generate a KML file with a line connecting the specified "From Station" and "To Station" coordinates.
+8. The KML file will be saved on your desktop, and Google Earth Pro will automatically open the file to visualize the line connecting the selected stations.
 
 ## Important Notes
 - Make sure the station numbers entered in the "From Station" and "To Station" fields are within the valid range. The valid range is displayed on the GUI and depends on the imported coordinate data.
