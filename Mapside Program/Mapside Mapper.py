@@ -16,6 +16,7 @@ import tkinter.ttk as ttk
 import simplekml
 from tkinter import * 
 from ttkthemes import ThemedStyle
+from ttkthemes import ThemedTk
 from tkinter import messagebox
 from tkinter.filedialog import askopenfilename
 from geographiclib.geodesic import Geodesic
@@ -276,16 +277,28 @@ def help_message():
 root = tk.Tk()
 root.configure(background='#D8D8D8')
 
-# Setting Theme
-style = ThemedStyle(root)
-style.set_theme("clam")
-root.iconbitmap(f"{documents_path}\\Mapside Program\\assets\\Mapside.ico")
-
 # Setting the windows size
-root.title("Mapside Mapper")  # should always be inside mainloop
-root.geometry("350x200") # set window size
+root.title("Mapside Mapper")  # Should always be inside mainloop
+window_width = 350
+window_height = 200
+
+# Get the screen dimension
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+
+# Find the center point
+center_x = int(screen_width/2 - window_width / 2)
+center_y = int(screen_height/2 - window_height / 2)
+
+# Set the position of the window to the center of the screen
+root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}') # Set window size & Location
 root.minsize(350, 200)
 root.maxsize(350, 200)
+
+# Setting Theme
+style = ThemedStyle(root)
+style.set_theme("scidblue") #scidblue or clam
+root.iconbitmap(f"{documents_path}\\Mapside Program\\assets\\Mapside.ico")
 
 # Creating Menu
 menu = Menu(root)
@@ -302,8 +315,6 @@ help_menu = Menu(menu, tearoff=0)
 menu.add_cascade(label='Help', menu=help_menu)
 help_menu.add_command(label='Help', command=help_message)
 help_menu.add_command(label='About', command=None)
-help_menu.add_separator()
-help_menu.add_command(label='Exit', command=root.destroy)
 
 # Display Menu
 root.config(menu=menu)
@@ -527,11 +538,11 @@ def submit(event): # Pressing enter key to click on submit button
         tk.messagebox.showerror(title='Distance Error', message='From Sta # must be smaller than To Sta #')
         raise RuntimeError('FromStation_GreaterThan_ToStation')
     
-    # Checking if total line length is greater than 65,521.
+    # Checking if total line length is greater than 65,500.
     # 65,521 is the maximum amount of points a kmz line can have before it does not display in Google Earth
-    # If total line length is greater than 65,521, show an error
-    if from_and_to_diff >= 65521:
-        tk.messagebox.showerror(title='Distance Error', message='Length must not exceed 65,521 feet\'')
+    # If total line length is greater than 65,500, show an error
+    if from_and_to_diff >= 65500:
+        tk.messagebox.showerror(title='Distance Error', message='Length must not exceed 65,500 feet\'')
         raise RuntimeError('Length_To_Long')
 
     from_input_var.set("")
@@ -558,10 +569,10 @@ def submit(event): # Pressing enter key to click on submit button
 root.bind('<Return>', submit)
 
 # Creating a label for "From Station:" using widget Label
-from_label = tk.Label(root, text = 'From Station:', font=('Montserrat',10, 'bold'), bg='#D8D8D8')
+from_label = tk.Label(root, text = 'From Station:', font=('Montserrat', 10, 'bold'), bg='#D8D8D8')
 img = PhotoImage(file=f"{documents_path}\\Mapside Program\\assets\\info.png")
 infoLabel1 = ttk.Label(root, image=img)
-infoLabel1.place(relx=0.75, rely=0.20, anchor='center')
+infoLabel1.place(relx=0.75, rely=0.20, anchor='w')
 CreateToolTip(infoLabel1, text = ' Disabled Characters: +, =, ?, / ')
 
 # Creating an entry for input "From Station:" using widget Entry
@@ -572,9 +583,9 @@ from_entry.bind("?", lambda e: "break") # Disable characters from keyboard
 from_entry.bind("/", lambda e: "break") # Disable characters from keyboard
 
 # Creating a label for "To Station:"
-to_label = ttk.Label(root, text = 'To Station:', font = ('Montserrat',10,'bold'))
+to_label = tk.Label(root, text = 'To Station:', font=('Montserrat', 10, 'bold'), bg='#D8D8D8')
 infoLabel1 = ttk.Label(root, image=img)
-infoLabel1.place(relx=0.75, rely=0.4, anchor='center')
+infoLabel1.place(relx=0.75, rely=0.40, anchor='w')
 CreateToolTip(infoLabel1, text = ' Disabled Characters: +, =, ?, / ')
 
 # Creating an entry for "To Station:"
