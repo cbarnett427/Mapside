@@ -6,10 +6,13 @@ It allows users to import coordinates from a CSV or Excel file, calculate distan
 <br>
 
 <h2 align="center">
-  <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside%20Program/assets/Example%20Line02.png" alt="Example Line02"/>
+<!--   <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside%20Program/assets/ExampleLineLaptop.png" alt="Example Line Laptop Image"/>
+  <br>
+  <br> -->
+  <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside%20Program/assets/ExampleLine.png" alt="Example Line Image"/>
   <br>
   <br>
-  <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside%20Program/assets/Mapside%20Mapper.png" alt="Mapper.png"/>
+  <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside%20Program/assets/ExampleGUI.png" alt="Example GUI Image"/>
   <br>
   <br>
   <sub><sup>© 2023 Mapside - Licensed under the <a href="./LICENSE">MIT License</a>.</sup></sub>
