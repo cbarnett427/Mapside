@@ -6,13 +6,13 @@ It allows users to import coordinates from a CSV or Excel file, calculate distan
 <br>
 
 <h2 align="center">
-  <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside%20Program/assets/ExampleLineGE.png" alt="Example Line Google Earth Image"/>
+  <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside/assets/ExampleLineGE.png" alt="Example Line Google Earth Image"/>
   <br>
   <br>
-  <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside%20Program/assets/ExampleLine.png" alt="Example Line Image"/>
+  <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside/assets/ExampleLine.png" alt="Example Line Image"/>
   <br>
   <br>
-  <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside%20Program/assets/ExampleGUI.png" alt="Example GUI Image"/>
+  <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside/assets/ExampleGUI.png" alt="Example GUI Image"/>
   <br>
   <br>
   <sub><sup>© 2023 Mapside - Licensed under the <a href="./LICENSE">MIT License</a>.</sup></sub>
@@ -33,7 +33,7 @@ It allows users to import coordinates from a CSV or Excel file, calculate distan
 - Required Python libraries (NumPy, Pandas, Tkinter, Simplekml, Geopy, Pyproj, geographiclib)
 
 ## How to Use
-1. Clone the repository to your local machine or download the zip files and extract the "Mapside Program" folder to your desktop.
+1. Clone the repository to your local machine or download the zip files and extract the "Mapside" folder to your desktop.
 2. Ensure you have the required Python libraries installed by running the following command: <br>pip install numpy pandas tkinter simplekml geopy pyproj geographiclib
 3. Make sure to edit the file path variables to your desired file paths.
 4. Execute the program by running the "Mapside Mapper.py" file in the "Mapside Program" folder.
