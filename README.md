@@ -6,9 +6,9 @@ It allows users to import coordinates from a CSV or Excel file, calculate distan
 <br>
 
 <h2 align="center">
-<!--   <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside%20Program/assets/ExampleLineLaptop.png" alt="Example Line Laptop Image"/>
+  <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside%20Program/assets/ExampleLineGE.png" alt="Example Line Google Earth Image"/>
   <br>
-  <br> -->
+  <br>
   <img src="https://github.com/cbarnett427/Mapside-Mapper/blob/main/Mapside%20Program/assets/ExampleLine.png" alt="Example Line Image"/>
   <br>
   <br>
