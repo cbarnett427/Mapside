@@ -44,7 +44,7 @@ It allows users to import coordinates from a CSV or Excel file, calculate distan
 
 ## Important Notes
 - Make sure the station numbers entered in the "From Station" and "To Station" fields are within the valid range. The valid range is displayed on the GUI and depends on the imported coordinate data.
-- The total line length should not exceed 65,521 feet. This is the maximum amount of points a KMZ line can have before it does not display correctly in Google Earth Pro.
+- The total line length should not exceed 65,500 feet. This is the maximum amount of points a KMZ line can have before it does not display correctly in Google Earth Pro.
 - The application provides tooltips to help users understand certain features and restrictions.
 
 ## License
